@@ -1,0 +1,31 @@
+{
+  "name": "student-monitoring",
+  "version": "1.0.0",
+  "description": "A tool for monitoring students at the FPS school district. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/com/andersj5-cbe/student-monitoring"
+  },
+  "keywords": [
+    "FPS",
+    "Student",
+    "Monitoring"
+  ],
+  "author": "John Anderson <andersj5@fargo.k12.nd.us>",
+  "license": "ISC",
+  "dependencies": {
+    "activedirectory": "git+https://github.com/Madroxprime/activedirectory-fork.git",
+    "body-parser": "^1.18.2",
+    "copy-history": "git+https://github.com/andersj5-cbe/copy-history.git",
+    "express": "^4.16.1",
+    "file-reader": "git+https://github.com/andersj5-cbe/file-reader.git",
+    "get-computername": "git+https://github.com/andersj5-cbe/get-computerName.git",
+    "get-history": "git+https://github.com/andersj5-cbe/get-history.git",
+    "nodejs-iterator": "git+https://github.com/andersj5-cbe/nodejs-iterator.git",
+    "read-history": "git+https://github.com/andersj5-cbe/read-history.git"
+  }
+}
