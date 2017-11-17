@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script>
+            function handleShutdownClick(){
+                let student = $("#studentSDID").val();
+                $.get("/shutdown/"+student,function(){
+                    $("#studentSDID").val("");
+                });
+            }
+            function handleHistoryClick(){
+                console.log("History clicked");
+                let student = $("#studentHID").val();
+                $.get("/history/"+student,function(data){
+                    console.log("Get completing");
+                    console.log(data);
+                    $("#historyData").append(JSON.stringify(data));
+                    $("#studentHID").val("");
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <br>
+            shutdown id: <input type="text" id="studentSDID"><button onclick="handleShutdownClick()">OK</button>
+            <br>
+            history id: <input type="text" id="studentHID"><button onclick="handleHistoryClick()">OK</button>
+            <br>
+        <div id="historyData">
+            <h2>History</h2>
+        </div>
+    </body>
+</html>

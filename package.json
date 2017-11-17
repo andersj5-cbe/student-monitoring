@@ -20,6 +20,7 @@
   "dependencies": {
     "activedirectory": "git+https://github.com/Madroxprime/activedirectory-fork.git",
     "body-parser": "^1.18.2",
+    "client-sessions": "^0.8.0",
     "copy-history": "git+https://github.com/andersj5-cbe/copy-history.git",
     "express": "^4.16.1",
     "file-reader": "git+https://github.com/andersj5-cbe/file-reader.git",
